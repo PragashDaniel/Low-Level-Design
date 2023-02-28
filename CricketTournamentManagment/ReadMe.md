@@ -1,4 +1,4 @@
-# Cricket Tournament Management
+# CRICKET TOURNAMENT MANAGEMENT SYSTEM
 
 ## ADMIN MODULES
 

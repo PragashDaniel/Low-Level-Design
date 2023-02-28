@@ -1,6 +1,6 @@
 # CONSOLE-APPLICATIONS
 
-## - Banking System
-## - Cricket Tournament Management System
-## - Hospital Management System
+## - BANKING MANAGEMENT SYSTEM
+## - CRICKET TOURNAMENT MANAGEMENT SYSTEM
+## - HOSPITAL MANAGEMENT SYSTEM
  

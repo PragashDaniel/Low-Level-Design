@@ -31,7 +31,7 @@ public class AdminView implements AdminViewCallBack
         System.out.println("*** Welcome Admin ***");
         System.out.println("1)Team Request");
         System.out.println("2)Show Teams");
-        System.out.println("3)Create Match");
+        System.out.println("3)Create new Match");
         System.out.println("4)Manage Match details");
         System.out.println("5)Sign Out");
         System.out.println("Please, Enter the option...");
@@ -178,7 +178,7 @@ public class AdminView implements AdminViewCallBack
         System.out.println("*** Teams ***");
         HashMap<Integer, Team> teamRequest = adminController.allTeams();
         System.out.println("Team Id |       Team Name       | Contact No    ");
-        for (Map.Entry<Integer, Team> team : teamRequest.entrySet()) {
+        for(Map.Entry<Integer, Team> team : teamRequest.entrySet()) {
             System.out.print(team.getValue().getTeamId() + " ");
             System.out.print(team.getValue().getTeamName() + "\n ");
         }
@@ -211,7 +211,8 @@ public class AdminView implements AdminViewCallBack
         System.out.println("1)Manage Result");
         System.out.println("2)Update Event");
         System.out.println("3)Delete Event");
-        System.out.println("4)Back");
+        System.out.println("4)Points Table");
+        System.out.println("5)Back");
         switch (sc.nextInt()) {
             case 1:
                 manageResult(loginView);
@@ -223,6 +224,9 @@ public class AdminView implements AdminViewCallBack
                 deleteEvent(loginView);
                 break;
             case 4:
+                pointsTable(loginView);
+                break;
+            case 5:
                 adminHomePage(loginView);
                 break;
             default:
@@ -419,5 +423,18 @@ public class AdminView implements AdminViewCallBack
             System.out.println("Event doesn't Exist..");
             manageEvents(loginView);
         }
+    }
+
+    private void pointsTable(LoginView loginView) {
+        System.out.println("*** Points Table ***");
+        HashMap<Integer,Team> teams=adminController.allTeams();
+        System.out.println("S.No |      TEAM NAME   |  Points   | ");
+        for(Map.Entry<Integer,Team> team:teams.entrySet())
+        {
+            System.out.print(team.getValue().getTeamId()+"       ");
+            System.out.print(team.getValue().getTeamName()+"    ");
+            System.out.println(team.getValue().getPoint()+"  \n");
+        }
+        manageEvents(loginView);
     }
 }

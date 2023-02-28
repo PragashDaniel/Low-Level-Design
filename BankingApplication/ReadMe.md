@@ -1,4 +1,4 @@
-# Banking System
+# BANKING MANAGEMENT SYSTEM
 
 ## ADMIN MODULES
 

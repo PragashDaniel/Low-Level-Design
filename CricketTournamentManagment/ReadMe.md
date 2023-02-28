@@ -29,7 +29,7 @@
     - Team can view their details and also able to update their details.
     - Status is a field which used for team to know the status of their registration like approved or not.
 - **Player Details**  
-    -The Team Player details get displaye and also manage the player details also.
+    - The Team Player details get displaye and also manage the player details also.
 - **Co-Participants**
     - This module is accessible to team only if the team registration gets approved.
     - Team able to view the Co-Teams and also details of the co-team Players.

@@ -2,7 +2,7 @@
 
 ## ADMIN MODULES
 
-- Sign In
+- **Sign In**
     - Admin Sign In
 - View Requests
     - User Who are registered in our bank, their details gets displayed in this module.

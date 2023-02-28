@@ -1,4 +1,4 @@
-# Banking Application
+# Banking System
 
 ## ADMIN MODULES
 

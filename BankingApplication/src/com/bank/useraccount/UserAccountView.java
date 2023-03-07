@@ -77,7 +77,7 @@ public class UserAccountView extends Validation implements UserAccountViewCallBa
         String firstName=sc.next();
         System.out.println("Enter Last Name : ");
         String lastName=sc.next();
-        if(UserAccountView.checkName(firstName) && UserAccountView.checkName(lastName))
+        if(checkName(firstName) && checkName(lastName))
         {   userAccountController.editUserName(firstName,lastName,id);}
         else{
              System.out.println("*** Invalid Name *** ");
@@ -102,7 +102,7 @@ public class UserAccountView extends Validation implements UserAccountViewCallBa
     public void editMobileNo(int id) {
         System.out.println("Please Enter you new Mobile Number : ");
         long mobileNumber=sc.nextLong();
-        if(UserAccountView.checkMobile(mobileNumber))
+        if(checkMobile(mobileNumber))
             userAccountController.editMobileNo(mobileNumber,id);
         else
         {    System.out.println("Invalid mobile No ");editMobileNo(id);}
@@ -125,7 +125,7 @@ public class UserAccountView extends Validation implements UserAccountViewCallBa
                            "Press 1 for female\n"+
                            "Press 2 for male\n");
         Integer gender=sc.nextInt();
-        if(UserAccountView.checkGender(gender))
+        if(checkGender(gender))
             userAccountController.editGender(gender,id);
         else
         { System.out.println("Invalid Gender ");

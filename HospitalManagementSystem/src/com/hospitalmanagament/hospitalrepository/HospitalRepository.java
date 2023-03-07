@@ -19,7 +19,7 @@ public class HospitalRepository {
     private HashMap<Integer,Doctor> doctors=new HashMap<>();
     private HashMap<Integer,String> admin=new HashMap<>();
     private HashMap<Integer,Patient> patients=new HashMap<>();
-    private static int doctorId,patientId;
+    private int doctorId,patientId;
     
     private HospitalRepository(){}
     public static HospitalRepository getInstance() {

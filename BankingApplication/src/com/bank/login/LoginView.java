@@ -105,12 +105,12 @@ public class LoginView extends Validation implements LoginViewCallBack{
         System.out.println("*** Welcome for Registration ***");
         System.out.println("Please, Enter the First Name : ");
         String firstName = sc.next();
-        if (!LoginView.checkName(firstName)) {
+        if (!checkName(firstName)) {
             invalidName();return;
         }
         System.out.println("Please, Enter the Last Name : ");
         String lastName = sc.next();
-        if (!LoginView.checkName(lastName)) {
+        if (!checkName(lastName)) {
             invalidName();return;
         }
         System.out.println("Please, Enter your Date of Birth(dd/MM/yyyy) : ");
@@ -142,7 +142,6 @@ public class LoginView extends Validation implements LoginViewCallBack{
                 + "Press 1 for female\n"
                 + "Press 2 for male");
         Integer gender = sc.nextInt();
-        LoginView.checkGender(gender);
         System.out.println("*** Branch List ***");
         for (int i = 1; i <= loginController.brances().size(); i++) {
             System.out.println(i + ") " + loginController.brances().get(i));

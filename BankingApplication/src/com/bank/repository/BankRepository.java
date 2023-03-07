@@ -21,7 +21,7 @@ public class BankRepository {
     private HashMap<Integer, User> user = new HashMap<>();
     private HashMap<Integer, Admin> admin = new HashMap<>();
     private static BankRepository bankRepoInstance;
-    private static Integer userId = 0;
+    private Integer userId = 0;
     
     private BankRepository() {
     }

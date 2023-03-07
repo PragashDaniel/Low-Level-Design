@@ -13,13 +13,9 @@ import com.bank.login.LoginView;
  */
 public class Validation 
 {
-    private static LoginView loginView;
-    
-    //private Validation(){}
             
-    public static boolean checkName(String firstName) {
+    public boolean checkName(String firstName) {
         if (firstName.length() > 30) {
-            loginView.invalidName();
             return false;
         }
         firstName=firstName.toLowerCase();
@@ -31,7 +27,7 @@ public class Validation
         return true;
     }
 
-    public static boolean checkMobile(Long mobileNo) {
+    public boolean checkMobile(Long mobileNo) {
 
         String mobNo = String.valueOf(mobileNo);
         if (mobNo.length() != 10) {
@@ -40,7 +36,7 @@ public class Validation
         return true;
     }
 
-    public static boolean checkGender(Integer gender) {
+    public boolean checkGender(Integer gender) {
         if (gender != 1 && gender != 2) {
             return false;
         }

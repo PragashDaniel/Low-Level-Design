@@ -22,7 +22,7 @@ public class CricketRepository {
     private HashMap<Integer, String> admin = new HashMap<>();
     private HashMap<Integer,Match> matches=new HashMap<>();
     public static CricketRepository cricketRepoInstance;
-    static int teamId,matchNo;
+    private int teamId,matchNo;
 
     private CricketRepository() {}
 

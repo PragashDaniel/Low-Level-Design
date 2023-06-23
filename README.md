@@ -1,4 +1,4 @@
-# CONSOLE-APPLICATIONS
+# Low-Level-Design
 
 ## BANKING MANAGEMENT SYSTEM
    - Video Link : https://youtu.be/UKk10l-uiGo
